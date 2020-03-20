@@ -14,7 +14,7 @@ public class CaeserCipher {
 		Scanner sc = new Scanner(System.in);
 		
 		System.out.println("ENTER TEXT : ");
-		String plainText = sc.nextLine();
+		String plainText = sc.nextLine().toUpperCase();
 		System.out.println("ENTER KEY  : ");
 		int key = sc.nextInt();
 		String cipherText = doEncrypt(plainText, key);
